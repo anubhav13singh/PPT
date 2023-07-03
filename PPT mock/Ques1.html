@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ques1</title>
+</head>
+<body>
+    <h2> Explain all the CSS positions(static, fixed, sticky, relative, absolute) with one code example each</h2>
+
+    <h3>Static Position :-</h3> <p>it's a default position for Html.it normally flows with the web page. </p>
+
+    <h3>Fixed Positon:-</h3> <p>By the itself it says that its position is fixed or stays in same given position even if page is scrolled.  </p>
+
+    <h3>Sticky Position :-</h3> <p> When posiion Sticky is given to any of the object it floats with web page and stick or we can say fixed at a given position</p>
+
+    <h3>Relative Position:-</h3><p> When Relative position is given to any of the object it does'nt leave its position but move according to its own  normal position,here parent position is its own position</p>
+
+    <h3>Absolute Position:-</h3><p>In this object move according to its parent position. here object leave its original position and move to a given position</p>
+
+    <div class="position">
+     <div class="static">static</div>
+    <div class="fixed">fixed</div>
+    <div class="relative">relative</div>
+    <div class="Absolute">absolute</div>
+    <div class="sticky">sticky</div>
+    </div>
+    
+   
+<style>
+    .position{
+        display: flex;
+        width: 100vw;
+        height: 120vh;
+        background-color: #CAD5E2;
+        
+    }
+    .static{
+        width: 150px;
+        height: 150px;
+        position: static;
+        background-color: #B9345A;
+        color: azure;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }  
+     .fixed{
+        width: 150px;
+        height: 150px;
+        position: fixed;
+        left: 300px;
+        bottom: 50px;
+        background-color: #1B98F5;
+        color: azure;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+      .relative{
+        position: relative;
+        top: 30px;
+        width: 150px;
+        height: 150px;
+        background-color: #02B290;
+        color: azure;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }  
+    .Absolute{
+        position: relative;
+        top: 40px;
+        width: 150px;
+        height: 150px;
+        background-color: #FF6666;
+        color: azure;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }  
+    .sticky{
+        position: sticky;
+        top: 0px;
+        left: 0px;
+        width: 150px;
+        height: 150px;
+        background-color: #EDBF69;
+        color: azure;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }  
+
+</style>
+</body>
+</html>
