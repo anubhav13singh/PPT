@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    width: 100vw;  
+}
+ ul{
+    margin-left: 30px;
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+.img{
+    display: flex;
+    align-items: center;
+}
+.img img{
+    width: 20px;
+    height: 20px;
+}
+.login{
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+.sign{
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: yellow;
+    border: 1px solid grey;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 100px;
+    margin-top: 20px;
+}
+.left{
+    width: 400px;
+}
+.left button {
+    margin-top: 15px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: yellow;
+    border: 1px solid grey;
+}
+footer{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+footer p {
+    width: 800px;
+}
+footer button{
+    padding: 7px 20px;
+    border: 1px solid white;
+    color: aliceblue;
+    background: none;
+    border: 1px solid grey;
+}

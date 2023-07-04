@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ques-5</title>
+</head>
+<body>
+    <h3>Implement a CSS grid layout to display a gallery of images in a grid format for design refer the image shown below, replace the empty boxed with actual images</h3>
+
+    <div class="grid">
+        <div class="col1"><img src="https://images.unsplash.com/photo-1540273777513-7c4973aa2cd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDZ8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60"></div>
+
+        <div class="col1"><img src="https://images.unsplash.com/photo-1687226012369-36ec24bec4c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDI3fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=900&q=60"></div>
+
+        <div ><img src="https://images.unsplash.com/photo-1582127591790-0b34fb315bd0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"></div>
+
+        <div class="img4"><img src="https://images.unsplash.com/photo-1672243776895-7878f5180d25?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEwMHw2c01WalRMU2tlUXx8ZW58MHx8fHx8&auto=format&fit=crop&w=900&q=60"></div>
+
+        <div class="img5"><img src="https://images.unsplash.com/photo-1686237542774-4f1ead43a6d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDExNXw2c01WalRMU2tlUXx8ZW58MHx8fHx8&auto=format&fit=crop&w=900&q=60"></div>
+
+        <div><img src="https://images.unsplash.com/photo-1686131128954-3ceccda2d684?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEyNHw2c01WalRMU2tlUXx8ZW58MHx8fHx8&auto=format&fit=crop&w=900&q=60"></div>
+
+        
+
+        <div><img src="https://images.unsplash.com/photo-1686771435267-abbf768fad4c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDU0fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60"></div>
+
+    </div>
+    <style>
+        .grid{
+            display: grid;
+            grid-template-columns: 350px 350px 350px;
+            grid-template-rows: 250px 250px 250px;
+            gap: 20px;
+        }
+        
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .img4{
+           grid-column-start: 1;
+           grid-column-end: 3;
+        }
+        .img5{
+            grid-row-end: span 2;
+        }
+        </style>
+      <script>
+        var sum=0;
+var arr = [10,15,20,30];  
+arr.forEach(function myFunction(element)
+{  
+    	sum= sum+element;  
+});  
+console.log(sum);
+      </script>
+
+        
+    
+    
+</body>
+</html>
