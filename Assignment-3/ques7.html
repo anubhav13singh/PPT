@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div class="gallery">
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1688233600351-47254bfca479?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDl8NnNNVmpUTFNrZVF8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60">
+    </div>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1682188299490-1e6e9c98bac8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDI2fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=900&q=60">
+    </div>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1679608328234-ff27ae9a201f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDI5fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=900&q=60">
+    </div>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1687424909155-2ab96ed71f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDQxfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=900&q=60">
+    </div>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1687500161421-13c9c0d1d1b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDUzfDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=900&q=60">
+    </div>
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1687457099405-07229836be12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDU0fDZzTVZqVExTa2VRfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=900&q=60">
+    </div>
+
+   </div> 
+   <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .gallery{
+        background-color: black;
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center; 
+    }
+    .card{
+        width: 500px;
+        height: 350px;
+        margin: auto;   
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+    }
+    @media (max-width:500px) {
+        .gallery{
+            flex-direction: row;
+        }
+        .card{
+            width: 100%;
+        }
+    }
+  
+   
+   </style>
+</body>
+</html>
