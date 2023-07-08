@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>How can you destructure objects and arrays in ES6? </h3>
+    To destructure an array in JavaScript, we use the square brackets [] to store the variable name which will be assigned to the name of the array storing the element.
+    <pre>
+        let arr = ["Hello", "World"]  
+  
+// destructuring assignment  
+let [first, second] = arr;  
+  
+console.log(first); // Hello  
+console.log(second); // World  
+    </pre>
+
+    When destructuring objects, we use curly braces {} with the exact name of what we have in the object. Unlike in arrays where we can use any variable name to unpack the element, objects allow just the use of the name of the stored data.
+    <pre>
+        const bootcmp = {
+            frontend: "React",
+            backend: "Node",
+            database: "MongoDB",
+          };
+          
+          const { frontend, backend } = bootcmp;
+          console.log(frontend, backend);
+          
+          // React, Node
+    </pre>
+</body>
+</html>

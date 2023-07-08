@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>How can you define default parameter values in ES6 functions?</h3>
+    <p>default parameter values in ES6 functions means providing a default value to a parameter if on calling a function it wont assign a value it will take default value as a parameter </p>
+    If we do not pass a number as the second parameter and take the default parameter as the second parameter, it will multiply the first number with the default number, and if we pass two numbers as parameters, it will multiply the first number with the second number.  
+
+<pre>
+function multiply(a, b = 2) {
+    return a * b;
+}
+  
+let num1 = multiply(5);
+console.log(num1);
+let num2 = multiply(5, 8);
+console.log(num2);
+
+Output:
+
+10
+40
+</pre>
+</body>
+</html>
