@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>
+        What’s difference between Synchronous and Asynchronous?
+    </h4>
+    <p>Ans:-synchronous programming has the following two features :<br>
+        A single task is executed at a time.
+        <br>
+        This style of programming gives rise to a “blocking code” situation as each task has to wait for the previous tasks to get done<br>
+        while executing code it may take time for some function to execute.so in synchronous it ll wait till the time code get executed but in asynchronous it ll not wait for the code to get executed.instead it ll execute next line of code 
+    </p>
+
+    <h4>What are Web Apis ?</h4>
+    <p>Ans:-Api standd for Application Programing interface.it is some sort of function.whenever a developer want to get some data from a database it calls an api.in simple words its a medium for for frontend developer to get connected to database </p>
+
+    
+    <h4>Explain SetTimeOut and setInterval </h4>
+    <p>Ans:-The setTimeout() method is used to call a function after a certain period of time. The setInterval() Javascript method is used to call a function repeatedly at a specified interval of time.</p>
+
+
+    <h4>how can you handle Async code in JavaScript ?</h4>
+    <p>Ans:- Async code in JavaScript can be handled by Async/await or by try/catch or by .then method.</p>
+
+
+    <h4>What are Promises & Explain Some Three Methods of Promise</h4>
+    <p>Ans:-Promises are useful when you have to handle more than one asynchronous task, one after another.<br>
+        
+     A promise may have one of three states.<br>
+
+Pending:-A promise starts in a pending state. That means the process is not complete<br>
+Fulfilled :-If the operation is successful, the process ends in a fulfilled state.<br>
+Rejected:-And, if an error occurs, the process ends in a rejected state.<br>
+
+    </p>
+
+    <h4> What are Callbacks &  Callback Hell ?</h4>
+    <p>Callbacks are basically methods that are passed as the parameters to the other function.function that take another function as a parameter callwd as higher orderf functions. </p>
+    <p>The phenomenon which happens when we nest multiple callbacks within a function is called a callback hell</p>
+
+
+    <h4>What’s async & await Keyword in JavaScript</h4>
+    <p>The await keyword must be written inside a async function and it essentially waits for a Promise(). The async function is made to stop its execution until a Promise() is either fulfilled or rejected. The function will resume only once the promise is settled. After it resumes, the value of the set of await expression will contain the value of the settled Promise(). await expression shows the rejected result if the Promise() gets rejected.
+        It serves as a better way of approaching promises because we are removing the usage of .catch() and .then() 
+    </p>
+<h4>Explain Purpose of Try and Catch Block & Why do we need it?</h4>
+<p>Try and Catch Block comes under promise.
+    try statement allows you to define a block of code to be tested before execution, whereas The catch statement allows you to define a block of code to be executed, if an error occurs in the try block. 
+</p>
+
+<h4>Explain fetch</h4>
+<p>fetch simply means to go and get data and return  data.in programing language we use fetch followed by url to get data from the database.it get all the necessary data needed by developer and return data to developer </p>
+
+<h4>How do you define an asynchronous function in JavaScript using async/await?</h4>
+<p>to make asynchronous function synchronous we use async/await explained above</p>
+</body>
+</html>
