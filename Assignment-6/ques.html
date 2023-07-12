@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: #FAACA8;
+background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%);
+
+
+    }
+    h4{
+        color: #722F37;
+    }
+    p{
+        color: #004953;
+    }
+    pre{
+        color: #8F9779;
+    }
+</style>
+<body>
+    <h4>What’s Constructor And Its Purpose?</h4>
+    <p>The constructor method is a special method of a class for creating and initializing an object instance of that class.</p>
+
+    <h4> Explain This Keyword and Its Purpose?</h4>
+    <p>This keyword refers to the current object in a function. When a method is called as a property of an object, then this refers to the parent object.</p>
+
+    <h4>What’s Call Apply Bind Method & Difference Between them</h4>
+    <p>Call invokes the function and allows you to pass in arguments one by one.<br>
+        Apply invokes the function and allows you to pass in arguments as an array.<br>
+        Bind returns a new function, allowing you to pass in a this array and any number of arguments.
+        <pre>
+        Apply vs. Call vs. Bind Examples
+        Call
+        
+        var person1 = {firstName: 'Jon', lastName: 'Kuperman'};
+        var person2 = {firstName: 'Kelly', lastName: 'King'};
+        
+        function say(greeting) {
+            console.log(greeting + ' ' + this.firstName + ' ' + this.lastName);
+        }
+        
+        say.call(person1, 'Hello'); // Hello Jon Kuperman
+        say.call(person2, 'Hello'); // Hello Kelly King
+        Apply
+        
+        var person1 = {firstName: 'Jon', lastName: 'Kuperman'};
+        var person2 = {firstName: 'Kelly', lastName: 'King'};
+        
+        function say(greeting) {
+            console.log(greeting + ' ' + this.firstName + ' ' + this.lastName);
+        }
+        
+        say.apply(person1, ['Hello']); // Hello Jon Kuperman
+        say.apply(person2, ['Hello']); // Hello Kelly King
+        Bind
+        
+        var person1 = {firstName: 'Jon', lastName: 'Kuperman'};
+        var person2 = {firstName: 'Kelly', lastName: 'King'};
+        
+        function say() {
+            console.log('Hello ' + this.firstName + ' ' + this.lastName);
+        }
+        
+        var sayHelloJon = say.bind(person1);
+        var sayHelloKelly = say.bind(person2);
+        
+        sayHelloJon(); // Hello Jon Kuperman
+        sayHelloKelly(); // Hello Kelly King
+    </pre>
+        </p>
+
+        <h4> Explain OOPS ? </h4>
+        <p>Object-oriented programming is ultimately about taking a huge problem and breaking it down to solvable chunks.<br>
+            OOP can make software development more modular, reusable, and maintainable, which can make it easier to upgrade and update the system</p>
+
+        <h4> Whats Abstraction and Its Purpose?</h4>
+        <p>Abstraction is used to hide background details or any unnecessary implementation about the data so that users only see the required information</p>
+        
+        <h4>Whats Polymorphism and Purpose of it?</h4>
+        <p>
+            The word “polymorphism” means having many forms. In simple words, we can define polymorphism as the ability of a message to be displayed in more than one form. A real-life example of polymorphism is a person who at the same time can have different characteristics.
+            It provides an ability to call the same method on different JavaScript objects</p>
+
+            <h4>Whats Inheritance and Purpose of it?</h4>
+            <p>The term 'Inheritance' is derived from the word "Inherit" which means, "to derive any quality, features or characteristics from family". Therefore, "Inheritance is defined as a mechanism where the sub or child class inherits the properties and characteristics of the super class or other derived classes.<br>
+                Inheritance helps in code reuse. The child class may use the code defined in the parent class without re-writing it. Inheritance can save time and effort as the main code need not be written again. Inheritance provides a clear model structure which is easy to understand.</p>
+        
+        <h4> Whats Encapsulation and Purpose of it ?</h4>
+        <p>Encapsulation is a way to restrict the direct access to some components of an object, so users cannot access state values for all of the variables of a particular object.</p>
+
+        <h4>Explain Class in JavaScript?</h4>
+        <p>The class keyword is used to create a class. The properties are assigned in a constructor function.
+            In object-oriented programming, a class is a template definition of the methods and variables in a particular kind of object. </p>
+
+        <h4>What’s Super Keyword & What it does?</h4>
+        <p>Super keyword in JavaScript can be used to access and call on an object's parent, it can be used in two ways. Syntax: super(arguments); super. parentMethod(arguments);</p>
+</body>
+</html>
